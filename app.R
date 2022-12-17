@@ -42,9 +42,8 @@ server <- function(input, output) {
   # Return the requested dataset ----
   datasetInput <- reactive({
     switch(input$dataset,
-           "Preliminar" = "/d2rApp.rds",
-           "Primeira Onda" = "/dadospreliminarapp.rds")
-  
+           "Preliminar" = "./dados/d2rApp.rds",
+           "Primeira Onda" = "./dados/dadospreliminarapp.rds")
   })
   
   # Generate a summary of the dataset ----
