@@ -45,6 +45,11 @@ ui <- fluidPage(
 
 # Lê bancos de dados e informações -------------------------------------------------------
 
+## get a list of datasets
+cd<-getwd();
+source("./scripts/crosstabs.R")
+setwd(cd)
+
 if (file.exists("./datasetlist.csv") )
 {
   ## datasetname, title, description
