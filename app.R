@@ -1,14 +1,10 @@
 library(shiny)
-library(ggplot2)
-library(Hmisc)
-library(xtable)
-library(hwriter)
-library(MASS)
 
+# Define UI for dataset viewer app ----
 ui <- fluidPage(
   
   # Application title
-  titlePanel("Projeto Temático"),
+  titlePanel("Análise dos dados do Projeto Temático"),
   
   sidebarLayout(
     sidebarPanel(
@@ -17,13 +13,13 @@ ui <- fluidPage(
                  ".shiny-output-error:before { visibility: hidden; }"
       ),
       
-      helpText("Escolha banco de dados e variável"),
+      helpText("Escolha o banco de dados e variáveis."),
       uiOutput("datafiles"),
       
-      uiOutput("dependent")
-      #                uiOutput("independent"),
-      #                uiOutput("control"),
-      #                uiOutput("subsetValue")
+      uiOutput("dependent"),
+      uiOutput("independent"),
+      uiOutput("control"),
+      uiOutput("subsetValue")
     ),
     
     mainPanel(
@@ -32,15 +28,12 @@ ui <- fluidPage(
         
         tabPanel("Tabela",
                  
-                 htmlOutput("table"),
+                 htmlOutput("N"),
                  
-                 htmlOutput("summary")
+                 htmlOutput("table")
         ),
-        tabPanel("Questionário do Preliminar",
-                 includeMarkdown("./docs/QuestionarioPreliminar.Rmd")
-        ),
-        tabPanel("Questionário da Primeira Onda",
-                 includeMarkdown("./docs/QuestionarioPrimeiraOnda.Rmd")         
+        tabPanel("Gráfico",
+                 plotOutput("plot")
         )
         
       )
@@ -49,19 +42,21 @@ ui <- fluidPage(
 )
 
 
+
 # Lê bancos de dados e informações -------------------------------------------------------
+
+
 
 ## get a list of datasets
 cd<-getwd();
 source("./scripts/crosstabs.R")
 setwd(cd)
-
 if (file.exists("./datasetlist.csv") )
 {
   ## datasetname, title, description
   datasetlist<-read.csv("./datasetlist.csv", stringsAsFactors = FALSE)
 } else {
-  "Banco de dados ausente."
+  "Dataset file is missing."
   return()
 }
 
@@ -70,10 +65,16 @@ datafiles<-setNames(datafiles, datasetlist$title)
 
 emptymatch<-"."
 
+
+
+
+
+
+# Define server logic to summarize and view selected dataset -------------------------------------------
 server <- function(input, output) {
   
   output$datafiles <-renderUI({   
-    selectInput("dataset", "Selecione o banco de dados:", choices = c(Nenhum=".", datafiles ), selected=".")
+    selectInput("dataset", "Selecione os dados", choices = c(None=".", datafiles ), selected=".")
   }) 
   
   
@@ -108,14 +109,14 @@ server <- function(input, output) {
       getDatsetInfo(fullpath)                        
       
       selectInput("dependent", 
-                  label = "Escolha uma variável:",                   
-                  choices<- c(Nenhum='.', varnames),
+                  label = "Escolha uma variável dependente ",                   
+                  choices<- c(None='.', varnames),
                   selected = '.'
       )
     } else {
       selectInput("dependent", 
-                  label = "Escolha uma variável: ",
-                  choices<- c(Nenhum='.'),
+                  label = "Escolha uma variável dependente ",
+                  choices<- c(None='.'),
                   selected = '.'
       )
       
@@ -131,15 +132,15 @@ server <- function(input, output) {
       getDatsetInfo(fullpath)                        
       
       selectInput("independent", 
-                  label = "Choose an independent variable ",
-                  choices<- c(Nenhum='.', varnames),
+                  label = "Escolha uma variável independente ",
+                  choices<- c(None='.', varnames),
                   selected = '.'
       )
     } else {
       
       selectInput("independent", 
-                  label = "Choose an independent variable ",
-                  choices= c(Nenhum='.'),
+                  label = "Escolha uma variável independente ",
+                  choices= c(None='.'),
                   selected = '.'
       )
       
@@ -156,14 +157,14 @@ server <- function(input, output) {
       getDatsetInfo(fullpath)
       
       selectInput("control", 
-                  label = "Choose a control variable ",
-                  choices<- c(Nenhum='.', varnames),
+                  label = "Escolha uma variável de controle ",
+                  choices<- c(None='.', varnames),
                   selected = '.'
       )
     } else {
       selectInput("control", 
-                  label = "Choose a control variable ",
-                  choices<- c(Nenhum='.'),
+                  label = "Escolha uma variável de controle ",
+                  choices<- c(None='.'),
                   selected = '.'
       )
       
@@ -183,15 +184,15 @@ server <- function(input, output) {
         subsetValues<-names(table(subset[1]))
         
         selectInput("subsetValue", 
-                    label = "Choose a subset within the control",                   
-                    choices<- c(Nenhum='.', subsetValues),
+                    label = "Escolha um subgrupo dentro do controle",                   
+                    choices<- c(None='.', subsetValues),
                     selected = '.'
         )
         
       } else {
         selectInput("subsetValue", 
-                    label = "Choose a subset within the control",
-                    choices<- c(Nenhum='.'),
+                    label = "Escolha um subgrupo dentro do controle",
+                    choices<- c(None='.'),
                     selected = '.'
         )
         
@@ -247,18 +248,10 @@ server <- function(input, output) {
         ctab<<-ctab
         
         
-        
       } else if (ndims == 1)
       {
         
-        parte1 <- as.data.frame(prop.table(ctab)*100)
-        parte2 <- as.data.frame(round(prop.table(ctab)*nrow(datasetname),digits = 0))
-        
-        ctab <- cbind(parte1,parte2[,2])
-        
-        names(ctab) <- c("Categorias","Freq","N")
-        
-        ctab<<-ctab
+        ctab<<-prop.table(ctab)*100
       }                 
       
       
@@ -310,6 +303,30 @@ server <- function(input, output) {
     
   })
   
+  output$N<-renderText({
+    
+    if (( !is.null(input$dataset) &  !identical(input$dataset, emptymatch) )
+        & ( !identical(input$dependent, emptymatch) & !is.null(input$dependent) )
+    )
+    {      
+      
+      if (ndims == 2)
+      {
+        
+        text1 <- paste("N",min())
+        
+        cnames<-colnames(ctab)
+        ncols<-dimctab[2]
+        
+        ctab<-prop.table(ctab,2)*100
+        # Because of datasetc
+        ctab<<-ctab
+      }
+    }
+  })
+  
+  
+  
   output$summary<-renderText({
     
     if (!is.null(input$dataset) & !identical(input$dataset, emptymatch))
@@ -319,7 +336,7 @@ server <- function(input, output) {
       ndims<<-NULL
       ctab<<-NULL
       
-      text1<-paste("<h3> <br><br> Informações sobre este banco de dados</h3>")
+      text1<-paste("<h3>Informações sobre este banco de dados</h3>")
       ## Include an HTML description in the data file.
       text4<-paste0("<h4>",as.character(selectedData["title"]), "</h4>")
       text2<-as.character(selectedData["dataDescription"])
@@ -327,7 +344,7 @@ server <- function(input, output) {
       
       return(text3)
     } else {
-      "<h5><p><br>Por favor, escolha um banco de dados.</p><h5>"
+      "<p>Por favor escolha um banco de dados</p>"
       
     }
     
@@ -342,12 +359,12 @@ server <- function(input, output) {
     
     if (!is.null(input$independent) & !identical(input$independent, emptymatch))
     {
-      title<-paste(title,"by", input$independent, "<br/>", sep=" ")
+      title<-paste(title," ", input$independent, "<br/>", sep=" ")
       
     }
     if (!is.null(input$control) & !identical(input$control, emptymatch))
     {
-      title<-paste0(title, "Controlling for ", input$control, " = ", input$subsetValue, "<br/>")      
+      title<-paste0(title, "Controlando por ", input$control, " = ", input$subsetValue, "<br/>")      
     }
     if (title != "")
     {
@@ -357,8 +374,7 @@ server <- function(input, output) {
     
   })
   
-}   
-
+}      
 
 
 

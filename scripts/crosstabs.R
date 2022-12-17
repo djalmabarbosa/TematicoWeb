@@ -12,3 +12,22 @@ creatextab<-function(factorsToUse, data)
         
 }
 
+doLoglinear<-function(factorsToUse, data)
+{
+
+        formula<-as.formula(paste("Freq ~", paste(factorsToUse, collapse="+"), sep=""))
+        xtabdata<-xtabs(formula=formula, drop.unused.levels = TRUE, data=data)
+        print(class(formula))
+
+        loglm(formula = formula, data=xtabdata, na.action=TRUE)
+        
+}
+
+doLoglinearSaturated<-function(factorsToUse, data)
+{
+        formula<-as.formula(paste("Freq ~", paste(factorsToUse, collapse="+"), sep=""))
+        xtabdata<-xtabs(formula=formula, drop.unused.levels = TRUE, data=data)
+        formulasat<-as.formula(paste("Freq ~", paste(factorsToUse, collapse="*"), sep=""))
+
+        loglm(formula = formulasat, data=xtabdata)
+}
