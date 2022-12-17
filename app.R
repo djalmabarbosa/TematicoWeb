@@ -36,28 +36,106 @@ ui <- fluidPage(
   )
 )
 
-# Define server logic to summarize and view selected dataset ----
+
+## get a list of datasets ----------------------------------------------------------------
+
+if (file.exists("./datasetlist.csv") )
+{
+  ## datasetname, title, description
+  datasetlist<-read.csv("./datasetlist.csv", stringsAsFactors = FALSE)
+} else {
+  "Dataset file is missing."
+  return()
+}
+
+datafiles<-datasetlist$datasetname
+datafiles<-setNames(datafiles, datasetlist$title)
+
+emptymatch<-"."
+
+
+
+
+
+# Define server logic to summarize and view selected dataset ------------------------------
 server <- function(input, output) {
   
   # Return the requested dataset ----
-  datasetInput <- reactive({
-    switch(input$dataset,
-           "Preliminar" = "./dados/d2rApp.rds",
-           "Primeira Onda" = "./dados/dadospreliminarapp.rds")
+  output$datafiles <-renderUI({   
+    selectInput("dataset", "Selecione os dados", choices = c(None=".", arquivos), selected=".")
+  }) 
+  
+  getDataPath<- reactive({
+    
+    fullpath<-paste0('./dados/', input$dataset)
   })
+  
+  getDatsetInfo<-function(fullpath)
+  {
+    nomebanco<<-NULL
+    nomebanco<<-readRDS(fullpath)
+    
+    nomesvar<-colnames(nomebanco)
+    
+    nomesvar<<-NULL
+    nomesvar<<-nomesvar[nomesvar != "Freq"]
+    
+  }
+  
+  # Primeiro output: a escolha da variável
+  shinyServer(function(input, output) {
+    
+    
+    output$datafiles <-renderUI({   
+      selectInput("dataset", "Select your data", choices = c(None=".", datafiles ), selected=".")
+    }) 
+    getDataPath<- reactive({
+      fullpath<-paste0('./data/', input$dataset)
+    })
+    getDatsetInfo<-function(fullpath)
+    {
+      datasetname<<-NULL
+      datasetname<<-readRDS(fullpath)
+      varnames<-colnames(datasetname)
+      varnames<<-NULL
+      varnames<<-varnames[varnames != "Freq"]
+    }
+    
+    output$dependent<-renderUI({
+      if (!is.null(input$dataset) & !identical(input$dataset, emptymatch ))
+      {
+        fullpath<-getDataPath()
+        getDatsetInfo(fullpath)                        
+        selectInput("dependent", 
+                    label = "Escolha uma variável",                   
+                    choices<- c(None='.', varnames),
+                    selected = '.'
+        )
+      } else {
+        selectInput("dependent", 
+                    label = "Escolha uma variável",
+                    choices <- c(None='.'),
+                    selected = '.'
+        )
+        
+      }
+      
+    })
   
   # Generate a summary of the dataset ----
   output$summary <- renderPrint({
-    dataset <- datasetInput()
-    summary(dataset)
+    
+    if (( !is.null(input$dataset) &  !identical(input$dataset, emptymatch) )
+        & ( !identical(input$dependent, emptymatch) & !is.null(input$dependent) )
+    )
+    {    
+      fullpath<-getDataPath()
+      getDatsetInfo(fullpath) 
+      summary(input$dependent)
+    }
   })
   
-  # Show the first "n" observations ----
-  output$view <- renderTable({
-    head(datasetInput(), n = input$obs)
-  })
   
-}
 
 # Create Shiny app ----
 shinyApp(ui = ui, server = server)
