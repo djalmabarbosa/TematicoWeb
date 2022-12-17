@@ -1,0 +1,459 @@
+---
+title: "Perguntas Preliminar"
+author: "Djalma Barbosa"
+date: "Quarta-feira, 14 de dezembro, 2022"
+output: html_document
+---
+
+1. Qual a sua data de nascimento?
+2. Quantos anos você tem?   
+Data de preenchimento
+Idade calculada
+3. Qual dessas modalidades de ensino você está cursando em 2022?
+4. Que ano você está cursando?
+5. Em qual período?    
+6. Em qual cidade você mora?  
+Qual cidade:
+Região de Sorocaba. Especifique:
+Na Baixada Santista. Especifique:
+7. Quanto à sua cor/raça, como você se classifica? (categorias usadas pelo IBGE)    
+8. Em qual religião/culto você foi criado/a?    
+Mais de uma. Especifique:
+Outra(s). Especifique:
+9. Atualmente, qual a principal religião/culto que você frequenta?    
+Mais de uma. Especifique:
+Outra(s). Especifique:
+10. Que importância a religião/culto tem em sua vida?  
+11. Contando com você, quantas pessoas moram na sua casa?
+12. Com quem você mora?     (Assinale as que se aplicam)     (choice=Mãe)
+12. Com quem você mora?     (Assinale as que se aplicam)     (choice=Pai)
+12. Com quem você mora?     (Assinale as que se aplicam)     (choice=Filho/filha (s) do meu padrasto / madrasta)
+12. Com quem você mora?     (Assinale as que se aplicam)     (choice=Irmão/irmã (s))
+12. Com quem você mora?     (Assinale as que se aplicam)     (choice=Avó/avô)
+12. Com quem você mora?     (Assinale as que se aplicam)     (choice=Padrasto/madrasta)
+12. Com quem você mora?     (Assinale as que se aplicam)     (choice=Namorado / namorada)
+12. Com quem você mora?     (Assinale as que se aplicam)     (choice=Sozinho / sozinha)
+12. Com quem você mora?     (Assinale as que se aplicam)     (choice=Outros)
+12. Com quem você mora?     (Assinale as que se aplicam)     (choice=Prefiro não responder)
+Outros. Especificar: 
+13. Quantos cômodos tem a sua casa (contando sala, banheiro, cozinha, quarto, área de serviço)?    
+14. Qual é (ou era) a escolaridade de sua mãe?     
+15. Você está trabalhando, estagiando ou exercendo alguma atividade com rendimento?
+16. Atualmente, você trabalha como?    
+De outra forma. Especifique: 
+17. Você trabalha quantas horas por semana?    
+18. Nos ÚLTIMOS 12 MESES&nbsp;você procurou emprego?
+19. Como o seu trabalho mudou desde o início da pandemia?     
+Mudou de outra forma. Qual
+20. Considerando o trabalho doméstico, quantas horas por semana você se dedica a esse tipo de atividade na sua casa? (arrumação da casa, lavar-passar roupa, cozinhar, cuidar de crianças, doentes ou idosos)   
+21. Você descumpriu medidas de prevenção para trabalhar durante a pandemia de COVID-19   (ex.: ficar sem o distanciamento físico necessário, estar em lugar não ventilado, não usar máscara)?  (Assinale as que se aplicam)   
+Se sim, especifique:  (Assinale as que se aplicam)  (choice=Porque achei difícil manter a prevenção)
+Se sim, especifique:  (Assinale as que se aplicam)  (choice=Porque meu emprego/chefia exigiu)
+Se sim, especifique:  (Assinale as que se aplicam)  (choice=Porque trabalho por conta própria e não poderia parar)
+Se sim, especifique:  (Assinale as que se aplicam)  (choice=Prefiro não responder)
+22. Você acredita que a pandemia afetou as suas chances no futuro a curto e médio prazo?  (Assinale as que se aplicam)     
+Não afetou. Especifique: (choice=Não afetou as chances de conseguir um trabalho)
+Não afetou. Especifique: (choice=Não afetou as chances de seguir estudando)
+Sim afetou. Especifique: (choice=Sim, afetou as minhas chances de conseguir um trabalho)
+Sim afetou. Especifique: (choice=Sim, afetou as minhas chances de seguir trabalhando)
+Sim afetou. Especifique: (choice=Sim, afetou as minhas chances de seguir estudando)
+23. Ao terminar o nível médio, o que você pretende priorizar pensando em profissão e trabalho?      (choice=Fazer cursos profissionalizantes)
+23. Ao terminar o nível médio, o que você pretende priorizar pensando em profissão e trabalho?      (choice=Fazer curso técnico)
+23. Ao terminar o nível médio, o que você pretende priorizar pensando em profissão e trabalho?      (choice=Fazer cursos preparatórios para exames e vestibulares (cursinhos))
+23. Ao terminar o nível médio, o que você pretende priorizar pensando em profissão e trabalho?      (choice=Fazer um curso de nível superior)
+23. Ao terminar o nível médio, o que você pretende priorizar pensando em profissão e trabalho?      (choice=Buscar trabalho / seguir trabalhando)
+23. Ao terminar o nível médio, o que você pretende priorizar pensando em profissão e trabalho?      (choice=Dedicar-se aos afazeres de casa e ao cuidado de pessoas próximas/familiares (parentes, crianças, idoso e/ou outras))
+23. Ao terminar o nível médio, o que você pretende priorizar pensando em profissão e trabalho?      (choice=Não sei)
+23. Ao terminar o nível médio, o que você pretende priorizar pensando em profissão e trabalho?      (choice=Prefiro não responder)
+24. Seus pais ou algum membro da sua família perderam seus empregos/trabalhos ou renda devido ao Coronavírus (COVID-19)?    
+25. No ÚLTIMO MêS, você e sua família ficaram sem comida suficiente e sem dinheiro para conseguir mais?
+26. Sua família recebe dinheiro de algum programa social (como bolsa família ou auxílio emergencial)?    
+27. Você participa de algum coletivo ou grupo de jovens?   (Assinale as que se aplicam)     (choice=De grupo de cultura (dança, música, teatro, sarau, literatura))
+27. Você participa de algum coletivo ou grupo de jovens?   (Assinale as que se aplicam)     (choice=De grupo religioso (na igreja, no terreiro, no culto, na escola))
+27. Você participa de algum coletivo ou grupo de jovens?   (Assinale as que se aplicam)     (choice=De grupo de mobilização social-política (grêmio estudantil, organização do meu bairro/comunidade, meio ambiente, saúde, feminista, LGBTQI, partido))
+27. Você participa de algum coletivo ou grupo de jovens?   (Assinale as que se aplicam)     (choice=De outro(s) grupo(s))
+27. Você participa de algum coletivo ou grupo de jovens?   (Assinale as que se aplicam)     (choice=Não participo de nenhum coletivo ou grupo)
+27. Você participa de algum coletivo ou grupo de jovens?   (Assinale as que se aplicam)     (choice=Prefiro não responder)
+De outro(s) grupo(s). Qual/quais?
+28. Você frequenta serviços de saúde?    
+29. Por que você não frequenta?   (Assinale as que se aplicam)   (choice=Porque é longe)
+29. Por que você não frequenta?   (Assinale as que se aplicam)   (choice=Porque não sei onde é)
+29. Por que você não frequenta?   (Assinale as que se aplicam)   (choice=Porque serei mal atendido / atendida)
+29. Por que você não frequenta?   (Assinale as que se aplicam)   (choice=Porque demora muito para ser atendido / atendida)
+29. Por que você não frequenta?   (Assinale as que se aplicam)   (choice=Porque não oferece o que eu preciso)
+29. Por que você não frequenta?   (Assinale as que se aplicam)   (choice=Porque não preciso)
+29. Por que você não frequenta?   (Assinale as que se aplicam)   (choice=Prefiro não responder)
+30. Quais serviços de saúde você frequenta?   (Assinale as que se aplicam)        (choice=Unidade Básica de Saúde (UBS) / Centro de Saúde / Posto de Saúde)
+30. Quais serviços de saúde você frequenta?   (Assinale as que se aplicam)        (choice=AMA/AME)
+30. Quais serviços de saúde você frequenta?   (Assinale as que se aplicam)        (choice=Hospital - pronto socorro)
+30. Quais serviços de saúde você frequenta?   (Assinale as que se aplicam)        (choice=Clínica particular)
+30. Quais serviços de saúde você frequenta?   (Assinale as que se aplicam)        (choice=Clínica de convênio de saúde)
+30. Quais serviços de saúde você frequenta?   (Assinale as que se aplicam)        (choice=CAPS-IJ (Centro de Atenção Psicossocial Infanto-juvenil))
+30. Quais serviços de saúde você frequenta?   (Assinale as que se aplicam)        (choice=CAPS-AD (Centro de Atenção Psicossocial Álcool e Drogas))
+30. Quais serviços de saúde você frequenta?   (Assinale as que se aplicam)        (choice=SAE (Serviço de Atenção Especializada))
+30. Quais serviços de saúde você frequenta?   (Assinale as que se aplicam)        (choice=Outros)
+Outro. Especifique:
+31. Nos ÚLTIMOS 12 MESES, você procurou algum serviço de saúde? 
+32. Que tipo de atendimento você procurou?   (Assinale as que se aplicam)  (choice=Consulta em clínica geral, qualquer sintoma (incluindo COVID))
+32. Que tipo de atendimento você procurou?   (Assinale as que se aplicam)  (choice=Consulta com ginecologista/obstetra)
+32. Que tipo de atendimento você procurou?   (Assinale as que se aplicam)  (choice=Consulta em dermatologia (pele, cabelo))
+32. Que tipo de atendimento você procurou?   (Assinale as que se aplicam)  (choice=Nutricionista, educação alimentar e controle de peso)
+32. Que tipo de atendimento você procurou?   (Assinale as que se aplicam)  (choice=Psicologia e saúde mental (dificuldade com sono, angústia, ansiedade, depressão, pensamentos negativos, tristeza e desânimo))
+32. Que tipo de atendimento você procurou?   (Assinale as que se aplicam)  (choice=Para buscar método contraceptivo e/ou camisinha)
+32. Que tipo de atendimento você procurou?   (Assinale as que se aplicam)  (choice=Para realizar teste de gravidez ou teste anti-HIV)
+32. Que tipo de atendimento você procurou?   (Assinale as que se aplicam)  (choice=Para tomar vacina (qualquer vacina, exceto a de covid-19))
+32. Que tipo de atendimento você procurou?   (Assinale as que se aplicam)  (choice=Outros)
+Outros. Especifique:   
+33. Quais atendimentos os centros de saúde públicos perto de sua escola e casa deveriam oferecer a vocês jovens e estudantes de ensino médio?   (Assinale todas que se aplicam)   (choice=Clínica geral, qualquer sintoma (incluindo COVID))
+33. Quais atendimentos os centros de saúde públicos perto de sua escola e casa deveriam oferecer a vocês jovens e estudantes de ensino médio?   (Assinale todas que se aplicam)   (choice=Consulta com ginecologista/obstetra)
+33. Quais atendimentos os centros de saúde públicos perto de sua escola e casa deveriam oferecer a vocês jovens e estudantes de ensino médio?   (Assinale todas que se aplicam)   (choice=Dermatologia (pele, cabelo))
+33. Quais atendimentos os centros de saúde públicos perto de sua escola e casa deveriam oferecer a vocês jovens e estudantes de ensino médio?   (Assinale todas que se aplicam)   (choice=Nutricionista, educação alimentar e controle de peso)
+33. Quais atendimentos os centros de saúde públicos perto de sua escola e casa deveriam oferecer a vocês jovens e estudantes de ensino médio?   (Assinale todas que se aplicam)   (choice=Psicologia e saúde mental (dificuldade com sono, angústia, ansiedade, depressão, pensamentos negativos, tristeza e desânimo))
+33. Quais atendimentos os centros de saúde públicos perto de sua escola e casa deveriam oferecer a vocês jovens e estudantes de ensino médio?   (Assinale todas que se aplicam)   (choice=Saúde reprodutiva e sexual (prevenção e cuidado de gravidez, contracepção, IST e AIDS, testagem, acesso a camisinha, tratamento e acompanhamento ginecológico/urológico))
+33. Quais atendimentos os centros de saúde públicos perto de sua escola e casa deveriam oferecer a vocês jovens e estudantes de ensino médio?   (Assinale todas que se aplicam)   (choice=Outros)
+Outros. Especifique:
+34. Você teve COVID-19?    (Assinale as que se aplicam)    (choice=Sim)
+34. Você teve COVID-19?    (Assinale as que se aplicam)    (choice=Não, testei negativo)
+34. Você teve COVID-19?    (Assinale as que se aplicam)    (choice=Não sei, pode ser, não testei)
+34. Você teve COVID-19?    (Assinale as que se aplicam)    (choice=Não sei, nunca tive sintomas)
+34. Você teve COVID-19?    (Assinale as que se aplicam)    (choice=Prefiro não responder)
+Se sim. Especifique:  Assinale todas as que se aplicam (choice=Sim, fui testado)
+Se sim. Especifique:  Assinale todas as que se aplicam (choice=Sim, tive sintomas)
+Se sim. Especifique:  Assinale todas as que se aplicam (choice=Sim, mais de uma vez)
+35. Você perdeu alguém que morreu de COVID-19      
+Qual o seu relacionamento com essa pessoa?
+Qual seu parentesco?
+Qual seu relacionamento?
+36. Você tomou a vacina contra a COVID-19?
+Se sim, quantas doses?
+Se não tomou, qual motivo?
+37. As pessoas que moram com você tomaram a vacina contra a COVID-19?     
+Usava máscara cobrindo boca e nariz
+Procurou manter distanciamento físico
+Evitava ficar muito tempo em espaços mal ventilados
+Usou álcool gel /lavou as mãos
+Evitou transporte público
+a) Usava máscara cobrindo boca e nariz
+b) Procurava manter distanciamento físico
+c) Evitava ficar muito tempo em espaços mal ventilados
+d) Usava álcool gel /lavou as mãos
+e) Evitou transporte público
+40. Você tem acesso à internet em sua casa?    
+41. Você precisa compartilhar o celular com as outras pessoas que vivem com você?  
+42. Você precisa compartilhar equipamentos como tablet ou computador com as outras pessoas que vivem com você?    
+43. Seu pai, sua mãe ou responsável conversam com você sobre o que você faz na internet?   (Assinale as que se aplicam)       (choice=Não, não tem noção do que faço na internet)
+43. Seu pai, sua mãe ou responsável conversam com você sobre o que você faz na internet?   (Assinale as que se aplicam)       (choice=Me dizem para tomar cuidado)
+43. Seu pai, sua mãe ou responsável conversam com você sobre o que você faz na internet?   (Assinale as que se aplicam)       (choice=Me ajuda(m) a fazer alguma coisa na internet que não entendo)
+43. Seu pai, sua mãe ou responsável conversam com você sobre o que você faz na internet?   (Assinale as que se aplicam)       (choice=Me explica(m) que alguns sites são bons e outros ruins para mim)
+43. Seu pai, sua mãe ou responsável conversam com você sobre o que você faz na internet?   (Assinale as que se aplicam)       (choice=Me ensina(m) jeitos de usar a internet com segurança)
+43. Seu pai, sua mãe ou responsável conversam com você sobre o que você faz na internet?   (Assinale as que se aplicam)       (choice=Me ensina(m) como devo me comportar na internet com outras pessoas)
+43. Seu pai, sua mãe ou responsável conversam com você sobre o que você faz na internet?   (Assinale as que se aplicam)       (choice=Me ajuda(m) quando alguma coisa na internet me incomoda ou chateia)
+43. Seu pai, sua mãe ou responsável conversam com você sobre o que você faz na internet?   (Assinale as que se aplicam)       (choice=Me explica(m) o que devo fazer se alguma coisa na internet me incomodar ou chatear)
+43. Seu pai, sua mãe ou responsável conversam com você sobre o que você faz na internet?   (Assinale as que se aplicam)       (choice=Prefiro não responder)
+44. Nos ÚLTIMOS 12 MESES você viu algum desses assuntos na internet? (Assinale as que se aplicam) (choice=Formas de ficar muito magro(a))
+44. Nos ÚLTIMOS 12 MESES você viu algum desses assuntos na internet? (Assinale as que se aplicam) (choice=Uso de substâncias para mudar meu corpo)
+44. Nos ÚLTIMOS 12 MESES você viu algum desses assuntos na internet? (Assinale as que se aplicam) (choice=Experiências de como modelar meu corpo para ficar atraente)
+44. Nos ÚLTIMOS 12 MESES você viu algum desses assuntos na internet? (Assinale as que se aplicam) (choice=Cenas de racismo)
+44. Nos ÚLTIMOS 12 MESES você viu algum desses assuntos na internet? (Assinale as que se aplicam) (choice=Cenas de machismo)
+44. Nos ÚLTIMOS 12 MESES você viu algum desses assuntos na internet? (Assinale as que se aplicam) (choice=Cenas de LGBTfobia)
+44. Nos ÚLTIMOS 12 MESES você viu algum desses assuntos na internet? (Assinale as que se aplicam) (choice=Cenas de assédio (constrangimento e/ou humilhação))
+44. Nos ÚLTIMOS 12 MESES você viu algum desses assuntos na internet? (Assinale as que se aplicam) (choice=Experiências sobre uso de drogas)
+44. Nos ÚLTIMOS 12 MESES você viu algum desses assuntos na internet? (Assinale as que se aplicam) (choice=Formas de me prevenir da gravidez)
+44. Nos ÚLTIMOS 12 MESES você viu algum desses assuntos na internet? (Assinale as que se aplicam) (choice=Formas de me prevenir do HIV/Aids)
+44. Nos ÚLTIMOS 12 MESES você viu algum desses assuntos na internet? (Assinale as que se aplicam) (choice=Formas de me prevenir da COVID-19)
+44. Nos ÚLTIMOS 12 MESES você viu algum desses assuntos na internet? (Assinale as que se aplicam) (choice=Formas de lidar com ansiedade, depressão, angústia, insônia)
+44. Nos ÚLTIMOS 12 MESES você viu algum desses assuntos na internet? (Assinale as que se aplicam) (choice=Formas de ter prazer sexual)
+44. Nos ÚLTIMOS 12 MESES você viu algum desses assuntos na internet? (Assinale as que se aplicam) (choice=Formas de lidar com ansiedade, depressão, angústia, insônia)
+44. Nos ÚLTIMOS 12 MESES você viu algum desses assuntos na internet? (Assinale as que se aplicam) (choice=Formas de cuidar de amigos e colegas)
+44. Nos ÚLTIMOS 12 MESES você viu algum desses assuntos na internet? (Assinale as que se aplicam) (choice=Formas de me machucar fisicamente)
+44. Nos ÚLTIMOS 12 MESES você viu algum desses assuntos na internet? (Assinale as que se aplicam) (choice=Formas de agredir e/ou machucar alguém)
+44. Nos ÚLTIMOS 12 MESES você viu algum desses assuntos na internet? (Assinale as que se aplicam) (choice=Formas de lidar com assédio)
+44. Nos ÚLTIMOS 12 MESES você viu algum desses assuntos na internet? (Assinale as que se aplicam) (choice=Não vi nenhum desses assuntos)
+44. Nos ÚLTIMOS 12 MESES você viu algum desses assuntos na internet? (Assinale as que se aplicam) (choice=Prefiro não responder)
+45. Você já se encontrou pessoalmente com pessoa(s) que você conheceu primeiro na internet?    
+46. Onde você conversou ou trocou mensagens com essa(s) pessoa(s)?   (Assinale as que se aplicam)     (choice=No Facebook)
+46. Onde você conversou ou trocou mensagens com essa(s) pessoa(s)?   (Assinale as que se aplicam)     (choice=No Instagram)
+46. Onde você conversou ou trocou mensagens com essa(s) pessoa(s)?   (Assinale as que se aplicam)     (choice=No Twitter)
+46. Onde você conversou ou trocou mensagens com essa(s) pessoa(s)?   (Assinale as que se aplicam)     (choice=TikTok)
+46. Onde você conversou ou trocou mensagens com essa(s) pessoa(s)?   (Assinale as que se aplicam)     (choice=Em mensagem por WhatsApp)
+46. Onde você conversou ou trocou mensagens com essa(s) pessoa(s)?   (Assinale as que se aplicam)     (choice=Em mensagem por Telegram)
+46. Onde você conversou ou trocou mensagens com essa(s) pessoa(s)?   (Assinale as que se aplicam)     (choice=Em mensagens no Discord ou outras plataformas de jogos on-line)
+46. Onde você conversou ou trocou mensagens com essa(s) pessoa(s)?   (Assinale as que se aplicam)     (choice=Em sala de bate-papo online)
+46. Onde você conversou ou trocou mensagens com essa(s) pessoa(s)?   (Assinale as que se aplicam)     (choice=Em aplicativos de relacionamentos (ex.: Tinder, Badoo, Grindr, etc.))
+46. Onde você conversou ou trocou mensagens com essa(s) pessoa(s)?   (Assinale as que se aplicam)     (choice=Outros aplicativos, redes ou sites)
+46. Onde você conversou ou trocou mensagens com essa(s) pessoa(s)?   (Assinale as que se aplicam)     (choice=Prefiro não responder)
+Outros aplicativos ou sites. Especifique:
+47. Nos ÚLTIMOS 12 MESES, alguma dessas coisas aconteceram com você?(Assinale as que se aplicam) (choice=Me enviaram uma mensagem pela internet sobre sexo)
+47. Nos ÚLTIMOS 12 MESES, alguma dessas coisas aconteceram com você?(Assinale as que se aplicam) (choice=Me pediram para falar sobre sexo na internet)
+47. Nos ÚLTIMOS 12 MESES, alguma dessas coisas aconteceram com você?(Assinale as que se aplicam) (choice=Me pediram na internet uma foto ou vídeo em que eu aparecia pelado(a))
+47. Nos ÚLTIMOS 12 MESES, alguma dessas coisas aconteceram com você?(Assinale as que se aplicam) (choice=Nenhuma dessas coisas aconteceu comigo)
+47. Nos ÚLTIMOS 12 MESES, alguma dessas coisas aconteceram com você?(Assinale as que se aplicam) (choice=Outras coisas)
+47. Nos ÚLTIMOS 12 MESES, alguma dessas coisas aconteceram com você?(Assinale as que se aplicam) (choice=Prefiro não responder)
+Outras coisas. Especifique: 
+48. Nos ÚLTIMOS 12 MESES, você fez alguma dessas coisas na internet? (Assinale as que se aplicam) (choice=Vi mensagem sobre sexo postada na internet para outras pessoas verem)
+48. Nos ÚLTIMOS 12 MESES, você fez alguma dessas coisas na internet? (Assinale as que se aplicam) (choice=Pedi para uma pessoa me mandar pela internet uma foto ou vídeo em que ela aparecia nu/a)
+48. Nos ÚLTIMOS 12 MESES, você fez alguma dessas coisas na internet? (Assinale as que se aplicam) (choice=Enviei para uma pessoa pela internet uma foto ou vídeo em que eu aparecia nu/a)
+48. Nos ÚLTIMOS 12 MESES, você fez alguma dessas coisas na internet? (Assinale as que se aplicam) (choice=Vi alguma imagem, foto ou vídeo de pessoa/s nu/as ou fazendo sexo na internet)
+48. Nos ÚLTIMOS 12 MESES, você fez alguma dessas coisas na internet? (Assinale as que se aplicam) (choice=Não fiz nenhuma dessas coisas)
+48. Nos ÚLTIMOS 12 MESES, você fez alguma dessas coisas na internet? (Assinale as que se aplicam) (choice=Prefiro não responder)
+49. Onde você viu as imagens, fotos ou vídeos de pessoas peladas ou fazendo sexo?   (Assinale as que se aplicam)     (choice=No Facebook)
+49. Onde você viu as imagens, fotos ou vídeos de pessoas peladas ou fazendo sexo?   (Assinale as que se aplicam)     (choice=No Instagram)
+49. Onde você viu as imagens, fotos ou vídeos de pessoas peladas ou fazendo sexo?   (Assinale as que se aplicam)     (choice=No Twitter)
+49. Onde você viu as imagens, fotos ou vídeos de pessoas peladas ou fazendo sexo?   (Assinale as que se aplicam)     (choice=Em mensagem por WhatsApp)
+49. Onde você viu as imagens, fotos ou vídeos de pessoas peladas ou fazendo sexo?   (Assinale as que se aplicam)     (choice=Em mensagem por Telegram)
+49. Onde você viu as imagens, fotos ou vídeos de pessoas peladas ou fazendo sexo?   (Assinale as que se aplicam)     (choice=Em mensagens no Discord ou outras plataformas de jogos on-line)
+49. Onde você viu as imagens, fotos ou vídeos de pessoas peladas ou fazendo sexo?   (Assinale as que se aplicam)     (choice=Em sala de bate-papo online)
+49. Onde você viu as imagens, fotos ou vídeos de pessoas peladas ou fazendo sexo?   (Assinale as que se aplicam)     (choice=Em aplicativos de relacionamentos (ex.: Tinder, Badoo, Grindr, etc.))
+49. Onde você viu as imagens, fotos ou vídeos de pessoas peladas ou fazendo sexo?   (Assinale as que se aplicam)     (choice=Outros aplicativos, redes ou sites)
+49. Onde você viu as imagens, fotos ou vídeos de pessoas peladas ou fazendo sexo?   (Assinale as que se aplicam)     (choice=Prefiro não responder)
+Outros aplicativos ou sites. Especifique:
+50. Como você foi designada(o) ao nascimento, nos seus registros civis?        
+51. Qual das seguintes alternativas descreve a forma como você se identifica hoje?      
+ Me identifico de outra forma. Especifique:
+52. Você diria que na sua vida se sentiu atraído/a por:  
+Outras respostas. Especifique:
+53. Qual categoria melhor descreve você?  
+Descrevo minha identidade sexual de outra forma. Especifique: 
+54. Você já teve relações sexuais? (Transou alguma vez?)    
+55. Você não teve relações sexuais porque:   (Assinale as que se aplicam)      (choice=não encontrou o/a parceiro/a ideal/ adequado/a)
+55. Você não teve relações sexuais porque:   (Assinale as que se aplicam)      (choice=tem/ teve vontade mas nunca teve oportunidade)
+55. Você não teve relações sexuais porque:   (Assinale as que se aplicam)      (choice=quer casar virgem)
+55. Você não teve relações sexuais porque:   (Assinale as que se aplicam)      (choice=tem medo de engravidar)
+55. Você não teve relações sexuais porque:   (Assinale as que se aplicam)      (choice=tem medo de contrair alguma doença)
+55. Você não teve relações sexuais porque:   (Assinale as que se aplicam)      (choice=não tem/teve vontade)
+55. Você não teve relações sexuais porque:   (Assinale as que se aplicam)      (choice=ainda não está no momento certo)
+55. Você não teve relações sexuais porque:   (Assinale as que se aplicam)      (choice=por questões religiosas)
+55. Você não teve relações sexuais porque:   (Assinale as que se aplicam)      (choice=outro)
+Outro. Especifique:
+56. Que idade você tinha na sua PRIMEIRA RELAÇÃO sexual? 
+57. Pensando em sua primeira relação sexual, você diria que:     
+58. Na época, a pessoa com quem você teve a sua primeira relação sexual era:    
+Outro(a). Especifique:
+59. A pessoa com quem você teve sua primeira relação era:        
+Outro. Especifique:
+60. Que idade tinha essa pessoa?
+61. O que vocês fizeram nesta primeira relação sexual?   (Assinale as que se aplicam)       (choice=Sexo oral)
+61. O que vocês fizeram nesta primeira relação sexual?   (Assinale as que se aplicam)       (choice=Sexo vaginal)
+61. O que vocês fizeram nesta primeira relação sexual?   (Assinale as que se aplicam)       (choice=Sexo anal)
+61. O que vocês fizeram nesta primeira relação sexual?   (Assinale as que se aplicam)       (choice=Masturbação)
+61. O que vocês fizeram nesta primeira relação sexual?   (Assinale as que se aplicam)       (choice=Outra forma de sexo)
+61. O que vocês fizeram nesta primeira relação sexual?   (Assinale as que se aplicam)       (choice=Prefiro não responder)
+Outra forma de sexo. Qual? 
+Fez coito interrompido/'tirou antes de gozar'
+Usou pílula anticoncepcional
+Usou DIU, injeção, adesivo ou outro método de longa duração
+Usou camisinha
+Fez tabelinha
+Usou pílula do dia seguinte (contracepção de emergência)
+Tomou banho depois da relação sexual
+Outros
+Outro. Especifique:
+Usou camisinha
+Eu tinha feito o teste de HIV
+Meu/minha parceiro/parceira havia feito o teste de HIV
+Busquei PEP (Antiretroviral Pós-Exposição)
+Usava PreP (Antiretroviral Pré-Exposição)
+Outro
+Outro. Especifique:
+Usou máscara durante a relação sexual
+Não nos beijamos/Não ficamos com as faces próximas
+Usou álcool gel e/ou lavagem das mãos  com água e sabão
+Tomei/tomamos banho antes da relação sexual
+Escolhi parceiro/as que tinham se vacinado
+Encontrei e transei ao ar livre
+Escolhi parceiro/as que tinham tido COVID-19
+Tínhamos testes negativos pra COVID-19
+Tínhamos feito um contrato de só ficarmos um com o outro (fidelidade)
+Outro
+Outro. Especifique:
+65. Quando foi a sua ÚLTIMA RELAÇÃO sexual?
+66. Pensando em sua ULTIMA relação sexual, você diria que:      
+67. Quem foi o/a parceiro/a da última relação sexual?      
+Outro(a). Especifique: 
+68. Que idade tinha essa pessoa?
+69. A pessoa com quem você teve sua última relação sexual era:        
+Outro. Especifique:
+70. O que vocês fizeram na última relação sexual?   (Assinale as que se aplicam)     (choice=Sexo oral)
+70. O que vocês fizeram na última relação sexual?   (Assinale as que se aplicam)     (choice=Sexo vaginal)
+70. O que vocês fizeram na última relação sexual?   (Assinale as que se aplicam)     (choice=Sexo anal)
+70. O que vocês fizeram na última relação sexual?   (Assinale as que se aplicam)     (choice=Masturbação)
+70. O que vocês fizeram na última relação sexual?   (Assinale as que se aplicam)     (choice=Outra forma de sexo)
+70. O que vocês fizeram na última relação sexual?   (Assinale as que se aplicam)     (choice=Prefiro não responder)
+Fez coito interrompido/'tirou antes de gozar'
+Usou pílula anticoncepcional
+Usou DIU, injeção, adesivo ou outro método de longa duração
+Usou camisinha
+Fez tabelinha
+Usou pílula do dia seguinte (contracepção de emergência)
+Tomou banho depois da relação sexual
+Outro
+Outro. Especifique:
+Usou camisinha
+Eu tinha feito o teste de HIV
+Meu/minha parceiro/parceira havia feito o teste de HIV
+Busquei PEP (Antiretroviral Pós-Exposição)
+Usava PreP (Antiretroviral Pré-Exposição)
+Outro
+Outro. Especifique:
+Usou máscara durante a relação sexual
+Não nos beijamos/Não ficamos com as faces próximas
+Usou álcool gel e/ou lavagem das mãos  com água e sabão
+Tomei/tomamos banho antes da relação sexual
+Escolhi parceiro/as que tinham se vacinado
+Encontrei e transei ao ar livre
+Escolhi parceiro/as que tinham tido COVID-19
+Tínhamos testes negativos pra COVID-19
+Tínhamos feito um contrato de só ficarmos um com o outro (fidelidade)
+Outro
+Outro. Especifique:
+74. Durante a pandemia, você deixou de encontrar alguém para transar por medo de se infectar?     
+75. Marque os motivos pelos quais você já deixou de encontrar alguém para transar durante a pandemia:   (Assinale as que se aplicam)      (choice=Eu ou meu/minha parceiro(a) usa transporte coletivo)
+75. Marque os motivos pelos quais você já deixou de encontrar alguém para transar durante a pandemia:   (Assinale as que se aplicam)      (choice=Possibilidade do(a) parceiro(a) estar infectado(a) com COVID-19)
+75. Marque os motivos pelos quais você já deixou de encontrar alguém para transar durante a pandemia:   (Assinale as que se aplicam)      (choice=Possibilidade de que eu estivesse infectado(a) com COVID-19)
+75. Marque os motivos pelos quais você já deixou de encontrar alguém para transar durante a pandemia:   (Assinale as que se aplicam)      (choice=Moro com pessoas que têm comorbidades e/ou são idosos(as))
+75. Marque os motivos pelos quais você já deixou de encontrar alguém para transar durante a pandemia:   (Assinale as que se aplicam)      (choice=Tenho uma condição de saúde que me torna mais vulnerável para COVID-19 mais grave)
+75. Marque os motivos pelos quais você já deixou de encontrar alguém para transar durante a pandemia:   (Assinale as que se aplicam)      (choice=Eu não estava vacinado(a))
+75. Marque os motivos pelos quais você já deixou de encontrar alguém para transar durante a pandemia:   (Assinale as que se aplicam)      (choice=Estava com suspeita de COVID-19 ou com COVID-19)
+75. Marque os motivos pelos quais você já deixou de encontrar alguém para transar durante a pandemia:   (Assinale as que se aplicam)      (choice=Outro(s) motivo(s))
+75. Marque os motivos pelos quais você já deixou de encontrar alguém para transar durante a pandemia:   (Assinale as que se aplicam)      (choice=Prefiro não responder)
+Outro(s) motivo(s). Especifique:
+76. Quais dos seguintes testes (rápidos ou laboratoriais) você já realizou alguma vez na vida?   (Não queremos saber o resultado, apenas saber se você fez o teste):   (Assinale as que se aplicam)      (choice=Gravidez (eu fiz o teste))
+76. Quais dos seguintes testes (rápidos ou laboratoriais) você já realizou alguma vez na vida?   (Não queremos saber o resultado, apenas saber se você fez o teste):   (Assinale as que se aplicam)      (choice=Gravidez (minha parceira fez o teste/fizemos juntos))
+76. Quais dos seguintes testes (rápidos ou laboratoriais) você já realizou alguma vez na vida?   (Não queremos saber o resultado, apenas saber se você fez o teste):   (Assinale as que se aplicam)      (choice=Sífilis)
+76. Quais dos seguintes testes (rápidos ou laboratoriais) você já realizou alguma vez na vida?   (Não queremos saber o resultado, apenas saber se você fez o teste):   (Assinale as que se aplicam)      (choice=HIV/AIDS (eu fiz o teste))
+76. Quais dos seguintes testes (rápidos ou laboratoriais) você já realizou alguma vez na vida?   (Não queremos saber o resultado, apenas saber se você fez o teste):   (Assinale as que se aplicam)      (choice=HIV/AIDS (meu/minha parceiro/parceira fez o teste / fizemos juntos))
+76. Quais dos seguintes testes (rápidos ou laboratoriais) você já realizou alguma vez na vida?   (Não queremos saber o resultado, apenas saber se você fez o teste):   (Assinale as que se aplicam)      (choice=Hepatite)
+76. Quais dos seguintes testes (rápidos ou laboratoriais) você já realizou alguma vez na vida?   (Não queremos saber o resultado, apenas saber se você fez o teste):   (Assinale as que se aplicam)      (choice=COVID-19)
+76. Quais dos seguintes testes (rápidos ou laboratoriais) você já realizou alguma vez na vida?   (Não queremos saber o resultado, apenas saber se você fez o teste):   (Assinale as que se aplicam)      (choice=Nenhum destes testes)
+76. Quais dos seguintes testes (rápidos ou laboratoriais) você já realizou alguma vez na vida?   (Não queremos saber o resultado, apenas saber se você fez o teste):   (Assinale as que se aplicam)      (choice=Prefiro não responder)
+77. Já ocorreram situações em que você desejasse ter relações sexuais e seu/sua parceiro/a não quisesse?    
+78. Nesses casos, o que você mais costuma fazer?    
+79. Já ocorreram situações em que seu(sua) parceiro(a) desejasse ter relações sexuais e você não queria?    
+80. Nesses casos o que ele/a costuma fazer?    
+81. Nesses casos, o que você costuma fazer?  
+82. Alguma vez você foi forçado(a) a ter contato sexual sem penetração (masturbação, passar a mão, sexo oral) quando você não queria?    
+83. Alguma vez você foi forçado(a) fisicamente a manter relações sexuais com penetração quando você não queria?    
+84. Alguma vez você teve relação sexual porque estava com medo do que ele/a pudesse fazer?  
+85. Alguma vez você foi forçado(a) a uma prática sexual degradante ou humilhante?    
+86. Você sofreu algum tipo de preconceito ou bullying nos ÚLTIMOS 12 MESES? 
+87. Onde aconteceu/aconteceram esta/as situação/situações?  (Assinale as que se aplicam)      (choice=Família)
+87. Onde aconteceu/aconteceram esta/as situação/situações?  (Assinale as que se aplicam)      (choice=Escola)
+87. Onde aconteceu/aconteceram esta/as situação/situações?  (Assinale as que se aplicam)      (choice=Igreja)
+87. Onde aconteceu/aconteceram esta/as situação/situações?  (Assinale as que se aplicam)      (choice=Grupo de jovens)
+87. Onde aconteceu/aconteceram esta/as situação/situações?  (Assinale as que se aplicam)      (choice=Lugares públicos)
+87. Onde aconteceu/aconteceram esta/as situação/situações?  (Assinale as que se aplicam)      (choice=Internet)
+87. Onde aconteceu/aconteceram esta/as situação/situações?  (Assinale as que se aplicam)      (choice=Trabalho)
+87. Onde aconteceu/aconteceram esta/as situação/situações?  (Assinale as que se aplicam)      (choice=Outro)
+87. Onde aconteceu/aconteceram esta/as situação/situações?  (Assinale as que se aplicam)      (choice=Não sei/não lembro)
+87. Onde aconteceu/aconteceram esta/as situação/situações?  (Assinale as que se aplicam)      (choice=Prefiro não responder)
+Outro. Especifique:     
+88. E porque você sofreu algum tipo de preconceito ou bullying   (Assinale as que se aplicam)   (choice=Por ser adolescente ou jovem)
+88. E porque você sofreu algum tipo de preconceito ou bullying   (Assinale as que se aplicam)   (choice=Por ser pobre)
+88. E porque você sofreu algum tipo de preconceito ou bullying   (Assinale as que se aplicam)   (choice=Pela minha cor ou raça)
+88. E porque você sofreu algum tipo de preconceito ou bullying   (Assinale as que se aplicam)   (choice=Pelo meu estilo ou roupas)
+88. E porque você sofreu algum tipo de preconceito ou bullying   (Assinale as que se aplicam)   (choice=Pela minha religião)
+88. E porque você sofreu algum tipo de preconceito ou bullying   (Assinale as que se aplicam)   (choice=Pelo lugar onde moro)
+88. E porque você sofreu algum tipo de preconceito ou bullying   (Assinale as que se aplicam)   (choice=Por não estar trabalhando)
+88. E porque você sofreu algum tipo de preconceito ou bullying   (Assinale as que se aplicam)   (choice=Por estar trabalhando)
+88. E porque você sofreu algum tipo de preconceito ou bullying   (Assinale as que se aplicam)   (choice=Por ser mulher ou menina)
+88. E porque você sofreu algum tipo de preconceito ou bullying   (Assinale as que se aplicam)   (choice=Pela minha aparência física)
+88. E porque você sofreu algum tipo de preconceito ou bullying   (Assinale as que se aplicam)   (choice=Por ser masculinizada/o)
+88. E porque você sofreu algum tipo de preconceito ou bullying   (Assinale as que se aplicam)   (choice=Por ser afeminado/a)
+88. E porque você sofreu algum tipo de preconceito ou bullying   (Assinale as que se aplicam)   (choice=Por gostar de pessoas do mesmo sexo)
+88. E porque você sofreu algum tipo de preconceito ou bullying   (Assinale as que se aplicam)   (choice=Por minhas ideias)
+88. E porque você sofreu algum tipo de preconceito ou bullying   (Assinale as que se aplicam)   (choice=Por outros motivos)
+88. E porque você sofreu algum tipo de preconceito ou bullying   (Assinale as que se aplicam)   (choice=Prefiro não responder)
+Por outro motivo. Especifique:
+89. Quem foi o/a autor/a do preconceito ou bullying?  (choice=Professor/a, inspetor/a, coordenador/a ou diretor/a da escola)
+89. Quem foi o/a autor/a do preconceito ou bullying?  (choice=Colegas)
+89. Quem foi o/a autor/a do preconceito ou bullying?  (choice=Pai/padrasto)
+89. Quem foi o/a autor/a do preconceito ou bullying?  (choice=Mãe/madrasta)
+89. Quem foi o/a autor/a do preconceito ou bullying?  (choice=Irmãos/irmãs)
+89. Quem foi o/a autor/a do preconceito ou bullying?  (choice=Outros membros da família (como primos/as, tios/as, avós, etc.))
+89. Quem foi o/a autor/a do preconceito ou bullying?  (choice=Pastor/a, padre, pai/mãe de santo ou outra autoridade religiosa)
+89. Quem foi o/a autor/a do preconceito ou bullying?  (choice=Irmã/irmão de fé)
+89. Quem foi o/a autor/a do preconceito ou bullying?  (choice=Profissional de saúde)
+89. Quem foi o/a autor/a do preconceito ou bullying?  (choice=Patrão, chefe ou colega de trabalho)
+89. Quem foi o/a autor/a do preconceito ou bullying?  (choice=Desconhecido/a)
+89. Quem foi o/a autor/a do preconceito ou bullying?  (choice=Outro)
+89. Quem foi o/a autor/a do preconceito ou bullying?  (choice=Prefiro não responder)
+Outro. Especifique:   
+90. Alguma vez você foi assediada/o na escola?    
+91. O que aconteceu?   (Assinale todas que se aplicam)     (choice=Fui constrangida/o moralmente)
+91. O que aconteceu?   (Assinale todas que se aplicam)     (choice=Fui constrangida/a sexualmente)
+91. O que aconteceu?   (Assinale todas que se aplicam)     (choice=Sofri abuso físico)
+91. O que aconteceu?   (Assinale todas que se aplicam)     (choice=Sofri abuso sexual)
+91. O que aconteceu?   (Assinale todas que se aplicam)     (choice=Fui ameaçada/o)
+91. O que aconteceu?   (Assinale todas que se aplicam)     (choice=Outro)
+91. O que aconteceu?   (Assinale todas que se aplicam)     (choice=Prefiro não responder)
+Outro. Especifique: 
+92. Quem estava envolvido/a na situação?   (Assinale todas que se aplicam)     (choice=Professor)
+92. Quem estava envolvido/a na situação?   (Assinale todas que se aplicam)     (choice=Professora)
+92. Quem estava envolvido/a na situação?   (Assinale todas que se aplicam)     (choice=Outro funcionário da escola)
+92. Quem estava envolvido/a na situação?   (Assinale todas que se aplicam)     (choice=Outra funcionária da escola)
+92. Quem estava envolvido/a na situação?   (Assinale todas que se aplicam)     (choice=Outro(s) aluno(s))
+92. Quem estava envolvido/a na situação?   (Assinale todas que se aplicam)     (choice=Outra(s) aluna(s))
+92. Quem estava envolvido/a na situação?   (Assinale todas que se aplicam)     (choice=Meu namorado)
+92. Quem estava envolvido/a na situação?   (Assinale todas que se aplicam)     (choice=Minha namorada)
+92. Quem estava envolvido/a na situação?   (Assinale todas que se aplicam)     (choice=Algum ficante/paquera)
+92. Quem estava envolvido/a na situação?   (Assinale todas que se aplicam)     (choice=Prefiro não responder)
+Outro funcionário da escola, qual a função:
+Outra funcionária da escola, qual a função:
+a) Durante os ÚLTIMOS 30 DIAS, com que frequência se sentiu nervoso/a?
+b) Durante os ÚLTIMOS 30 DIAS, com que frequência se sentiu sem esperança?
+c) Durante os ÚLTIMOS 30 DIAS, com que frequência se sentiu irrequieto/a ao ponto de não conseguir parar quieto/a?
+d) Durante os ÚLTIMOS 30 DIAS, com que frequência sentiu que tudo era um esforço?
+e) Durante os ÚLTIMOS 30 DIAS, com que frequência se sentiu tão triste que nada o/a conseguiu animar?
+f) Durante os ÚLTIMOS 30 DIAS, com que frequência se sentiu inútil?
+94. Você já fez alguma coisa para se machucar propositalmente, mas sem querer morrer (como se queimar ou se cortar de propósito)?    
+95. Durante os ÚLTIMOS 12 MESES, você fez alguma coisa para se machucar propositalmente, mas sem querer morrer (como se queimar ou se cortar de propósito)?
+96. Você buscou ajuda nos ÚLTIMOS 12 MESES para não fazer mais isso? De quem?(Assinale todas as que se aplicam)?  (choice=não busquei ajuda)
+96. Você buscou ajuda nos ÚLTIMOS 12 MESES para não fazer mais isso? De quem?(Assinale todas as que se aplicam)?  (choice=busquei ajuda de professores, coordenadores pedagógicos, direção na escola)
+96. Você buscou ajuda nos ÚLTIMOS 12 MESES para não fazer mais isso? De quem?(Assinale todas as que se aplicam)?  (choice=busquei ajuda de tratamento psicológico por psicoterapeutas)
+96. Você buscou ajuda nos ÚLTIMOS 12 MESES para não fazer mais isso? De quem?(Assinale todas as que se aplicam)?  (choice=busquei ajuda de psiquiatra ou de outra especialidade médica)
+96. Você buscou ajuda nos ÚLTIMOS 12 MESES para não fazer mais isso? De quem?(Assinale todas as que se aplicam)?  (choice=busquei ajuda de outras modalidades de terapia)
+96. Você buscou ajuda nos ÚLTIMOS 12 MESES para não fazer mais isso? De quem?(Assinale todas as que se aplicam)?  (choice=busquei ajuda do C.V.V.)
+96. Você buscou ajuda nos ÚLTIMOS 12 MESES para não fazer mais isso? De quem?(Assinale todas as que se aplicam)?  (choice=busquei ajuda de grupos religiosos)
+96. Você buscou ajuda nos ÚLTIMOS 12 MESES para não fazer mais isso? De quem?(Assinale todas as que se aplicam)?  (choice=busquei ajuda de amigos)
+96. Você buscou ajuda nos ÚLTIMOS 12 MESES para não fazer mais isso? De quem?(Assinale todas as que se aplicam)?  (choice=busquei ajuda de familiares)
+96. Você buscou ajuda nos ÚLTIMOS 12 MESES para não fazer mais isso? De quem?(Assinale todas as que se aplicam)?  (choice=busquei ajuda de grupos de discussão na internet)
+96. Você buscou ajuda nos ÚLTIMOS 12 MESES para não fazer mais isso? De quem?(Assinale todas as que se aplicam)?  (choice=busquei outras formas de ajuda)
+96. Você buscou ajuda nos ÚLTIMOS 12 MESES para não fazer mais isso? De quem?(Assinale todas as que se aplicam)?  (choice=Prefiro não responder)
+Busquei ajuda de outras modalidades de terapia. Quais?
+Busquei outras formas de ajuda. Quais? 
+97. Alguma vez você pensou seriamente em pôr um fim à sua vida?   
+98. E nos ÚLTIMOS 12 MESES, você pensou seriamente em cometer suicídio?
+99. Você buscou ajuda nos ÚLTIMOS 12 MESES para evitar esse pensamento? De quem? (Assinale as que se aplicam) (choice=não busquei ajuda)
+99. Você buscou ajuda nos ÚLTIMOS 12 MESES para evitar esse pensamento? De quem? (Assinale as que se aplicam) (choice=busquei ajuda de professores, coordenadores pedagógicos, direção na escola)
+99. Você buscou ajuda nos ÚLTIMOS 12 MESES para evitar esse pensamento? De quem? (Assinale as que se aplicam) (choice=busquei ajuda de tratamento psicológico por psicoterapeutas)
+99. Você buscou ajuda nos ÚLTIMOS 12 MESES para evitar esse pensamento? De quem? (Assinale as que se aplicam) (choice=busquei ajuda de psiquiatra ou de outra especialidade médica)
+99. Você buscou ajuda nos ÚLTIMOS 12 MESES para evitar esse pensamento? De quem? (Assinale as que se aplicam) (choice=busquei ajuda de outras modalidades de terapia)
+99. Você buscou ajuda nos ÚLTIMOS 12 MESES para evitar esse pensamento? De quem? (Assinale as que se aplicam) (choice=busquei ajuda do C.V.V.)
+99. Você buscou ajuda nos ÚLTIMOS 12 MESES para evitar esse pensamento? De quem? (Assinale as que se aplicam) (choice=busquei ajuda de grupos religiosos)
+99. Você buscou ajuda nos ÚLTIMOS 12 MESES para evitar esse pensamento? De quem? (Assinale as que se aplicam) (choice=busquei ajuda de amigos)
+99. Você buscou ajuda nos ÚLTIMOS 12 MESES para evitar esse pensamento? De quem? (Assinale as que se aplicam) (choice=busquei ajuda de familiares)
+99. Você buscou ajuda nos ÚLTIMOS 12 MESES para evitar esse pensamento? De quem? (Assinale as que se aplicam) (choice=busquei ajuda de grupos de discussão na internet)
+99. Você buscou ajuda nos ÚLTIMOS 12 MESES para evitar esse pensamento? De quem? (Assinale as que se aplicam) (choice=busquei outras formas de ajuda)
+99. Você buscou ajuda nos ÚLTIMOS 12 MESES para evitar esse pensamento? De quem? (Assinale as que se aplicam) (choice=Prefiro não responder)
+Busquei ajuda de outras modalidades de terapia. Quais?
+Busquei outras formas de ajuda. Quais? 
+100. Você já traçou um plano para cometer suicídio?       
+101. Durante os ÚLTIMOS 12 MESES, você planejou como cometeria suicídio?
+102. Quais assuntos você gostaria que fossem falados na escola além das matérias?   (Assinale as que se aplicam)     (choice=Preconceito e discriminação)
+102. Quais assuntos você gostaria que fossem falados na escola além das matérias?   (Assinale as que se aplicam)     (choice=Diversidade familiar)
+102. Quais assuntos você gostaria que fossem falados na escola além das matérias?   (Assinale as que se aplicam)     (choice=Diversidade étnico-racial)
+102. Quais assuntos você gostaria que fossem falados na escola além das matérias?   (Assinale as que se aplicam)     (choice=Prevenção ao HIV/AIDS e outras IST)
+102. Quais assuntos você gostaria que fossem falados na escola além das matérias?   (Assinale as que se aplicam)     (choice=Prevenção a gravidez e anticoncepcionais)
+102. Quais assuntos você gostaria que fossem falados na escola além das matérias?   (Assinale as que se aplicam)     (choice=Teste para gravidez e IST/AIDS)
+102. Quais assuntos você gostaria que fossem falados na escola além das matérias?   (Assinale as que se aplicam)     (choice=Discriminação religiosa)
+102. Quais assuntos você gostaria que fossem falados na escola além das matérias?   (Assinale as que se aplicam)     (choice=Sobre saúde mental (depressão, desânimo, ansiedade, tristeza, angústia))
+102. Quais assuntos você gostaria que fossem falados na escola além das matérias?   (Assinale as que se aplicam)     (choice=Uso de internet)
+102. Quais assuntos você gostaria que fossem falados na escola além das matérias?   (Assinale as que se aplicam)     (choice=Sexualidade (namoro, transformações corporais))
+102. Quais assuntos você gostaria que fossem falados na escola além das matérias?   (Assinale as que se aplicam)     (choice=Direitos dos adolescentes / jovens)
+102. Quais assuntos você gostaria que fossem falados na escola além das matérias?   (Assinale as que se aplicam)     (choice=Mercado de trabalho)
+102. Quais assuntos você gostaria que fossem falados na escola além das matérias?   (Assinale as que se aplicam)     (choice=Outros assuntos)
+Outros assuntos. Especifique
+103. Como você se sentiu durante o questionário?    
+104. O que você achou do tempo que levou para responder a esse questionário?    
+
+
