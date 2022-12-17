@@ -1,0 +1,13 @@
+name: TematicoWeb
+title: TematicoWeb
+username:
+account: djalmabarbosa
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 7910116
+bundleId: 6648740
+url: https://djalmabarbosa.shinyapps.io/TematicoWeb/
+when: 1671299385.35025
+lastSyncTime: 1671299385.35028
+asMultiple: FALSE
+asStatic: FALSE
