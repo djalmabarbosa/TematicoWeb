@@ -248,10 +248,18 @@ server <- function(input, output) {
         ctab<<-ctab
         
         
+        
       } else if (ndims == 1)
       {
         
-        ctab<<-prop.table(ctab)*100
+        parte1 <- as.data.frame(prop.table(ctab)*100)
+        parte2 <- as.data.frame(round(prop.table(ctab)*nrow(datasetname),digits = 0))
+        
+        ctab <- cbind(parte1,parte2[,2])
+        
+        names(ctab) <- c("Categorias","Freq","N")
+        
+        ctab<<-ctab
       }                 
       
       
