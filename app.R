@@ -85,7 +85,6 @@ server <- function(input, output) {
   # Primeiro output: a escolha da variável
   shinyServer(function(input, output) {
     
-    
     output$datafiles <-renderUI({   
       selectInput("dataset", "Select your data", choices = c(None=".", datafiles ), selected=".")
     }) 
@@ -122,6 +121,7 @@ server <- function(input, output) {
       
     })
   
+  
   # Generate a summary of the dataset ----
   output$summary <- renderPrint({
     
@@ -135,6 +135,7 @@ server <- function(input, output) {
     }
   })
   
+}
   
 
 # Create Shiny app ----
