@@ -127,16 +127,9 @@ server <- function(input, output) {
       
       # For now if there is a control variable, subset based on the value selected
       # This is ugly but it works with xtable which shiny depends on.
-      if (!is.null(input$subsetValue) & !identical(input$subsetValue, emptymatch) 
-          & !is.null(input$control) & !identical(input$control, emptymatch)
-      )
-      {
-        datasetnamec<-datasetname[datasetname[[input$control]] == input$subsetValue,]
-        
-      }
-      
+ 
       # Must be in the correct order.
-      factorsToUse<-c(input$dependent, input$independent)
+      factorsToUse<-c(input$dependent)
       
       factorsToUse<-factorsToUse[factorsToUse != "."]
       ctab<<-NULL
@@ -144,29 +137,11 @@ server <- function(input, output) {
       if (!exists("datasetnamec"))
       {
         
-        ctab<<-creatextab( factorsToUse, datasetname)
+        ctab<<-creatextab(factorsToUse, datasetname)
       } else {
-        ctab<-creatextab( factorsToUse, datasetnamec)
+        ctab<-creatextab(factorsToUse, datasetnamec)
       }
-      dimctab<-dim(ctab)
       
-      ndims<<-NULL
-      ndims<<-length(dimctab)
-      
-      if (ndims == 2)
-      {
-        cnames<-colnames(ctab)
-        ncols<-dimctab[2]
-        
-        ctab<-prop.table(ctab,2)*100
-        # Because of datasetc
-        ctab<<-ctab
-        
-        
-        
-      } else if (ndims == 1)
-      {
-        
         parte1 <- as.data.frame(prop.table(ctab)*100)
         parte2 <- as.data.frame(round(prop.table(ctab)*nrow(datasetname),digits = 0))
         
@@ -175,13 +150,11 @@ server <- function(input, output) {
         names(ctab) <- c("Categorias","Freq","N")
         
         ctab<<-ctab
-      }                 
-      
-      
+
       return(ctab)
       
     } 
-    
+  
   })
   
   
