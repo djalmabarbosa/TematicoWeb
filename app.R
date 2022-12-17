@@ -116,6 +116,75 @@ server <- function(input, output) {
   })
   
   
+  output$table <- renderTable({
+    if (( !is.null(input$dataset) &  !identical(input$dataset, emptymatch) )
+        & ( !identical(input$dependent, emptymatch) & !is.null(input$dependent) )
+        
+    )
+    {       
+      fullpath<-getDataPath()
+      getDatsetInfo(fullpath)                        
+      
+      # For now if there is a control variable, subset based on the value selected
+      # This is ugly but it works with xtable which shiny depends on.
+      if (!is.null(input$subsetValue) & !identical(input$subsetValue, emptymatch) 
+          & !is.null(input$control) & !identical(input$control, emptymatch)
+      )
+      {
+        datasetnamec<-datasetname[datasetname[[input$control]] == input$subsetValue,]
+        
+      }
+      
+      # Must be in the correct order.
+      factorsToUse<-c(input$dependent, input$independent)
+      
+      factorsToUse<-factorsToUse[factorsToUse != "."]
+      ctab<<-NULL
+      
+      if (!exists("datasetnamec"))
+      {
+        
+        ctab<<-creatextab( factorsToUse, datasetname)
+      } else {
+        ctab<-creatextab( factorsToUse, datasetnamec)
+      }
+      dimctab<-dim(ctab)
+      
+      ndims<<-NULL
+      ndims<<-length(dimctab)
+      
+      if (ndims == 2)
+      {
+        cnames<-colnames(ctab)
+        ncols<-dimctab[2]
+        
+        ctab<-prop.table(ctab,2)*100
+        # Because of datasetc
+        ctab<<-ctab
+        
+        
+        
+      } else if (ndims == 1)
+      {
+        
+        parte1 <- as.data.frame(prop.table(ctab)*100)
+        parte2 <- as.data.frame(round(prop.table(ctab)*nrow(datasetname),digits = 0))
+        
+        ctab <- cbind(parte1,parte2[,2])
+        
+        names(ctab) <- c("Categorias","Freq","N")
+        
+        ctab<<-ctab
+      }                 
+      
+      
+      return(ctab)
+      
+    } 
+    
+  })
+  
+  
   output$summary<-renderText({
     
     if (!is.null(input$dataset) & !identical(input$dataset, emptymatch))
