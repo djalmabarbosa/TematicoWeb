@@ -16,10 +16,10 @@ ui <- fluidPage(
       helpText("Escolha o banco de dados e variáveis."),
       uiOutput("datafiles"),
       
-      uiOutput("dependent"),
-      uiOutput("independent"),
-      uiOutput("control"),
-      uiOutput("subsetValue")
+      uiOutput("dependent")
+#      uiOutput("independent"),
+#      uiOutput("control"),
+#      uiOutput("subsetValue")
     ),
     
     mainPanel(
