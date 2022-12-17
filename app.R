@@ -47,7 +47,7 @@ ui <- fluidPage(
 
 ## get a list of datasets
 cd<-getwd();
-source("./scripts/crosstabs.R")
+
 setwd(cd)
 
 if (file.exists("./datasetlist.csv") )
