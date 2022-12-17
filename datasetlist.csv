@@ -1,3 +1,4 @@
 datasetname, title, dataDescription
-"dadospreliminarapp.rds","Questionário Preliminar","<p>Análise exploratória dos dados coletados pela equipe do projeto temático.</p>"
-"d2rApp.rds","Primeira Onda","<p>Análise da primeira onda coletada pela equipe do projeto temático.</p>"
+"prelApp.rds", "Dados Preliminares", "<p>A coleta de dados do Preliminar ocorreu em 2019</p><P>N=719</p>"
+"d2rApp.rds", "Dados da Primeira Onda", "<p>A coleta de dados da Primeira Onda ocorreu em 2022</p><p>N = 1.242</p>"
+
