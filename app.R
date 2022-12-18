@@ -22,23 +22,27 @@ ui <- fluidPage(
 #      uiOutput("subsetValue")
     ),
     
-    mainPanel(
-      htmlOutput("title"),
-      tabsetPanel(     
-        
-        tabPanel("Tabela",
-                 
-                 htmlOutput("N"),
-                 
-                 htmlOutput("table")
-        ),
-        tabPanel("Gráfico",
-                 plotOutput("plot")
-        )
-        
-      )
-      
-    ))
+mainPanel(
+  htmlOutput("title"),
+  tabsetPanel(     
+    
+    tabPanel("Table",
+             
+             htmlOutput("table"),
+             
+             htmlOutput("summary")
+    ),
+    tabPanel("Plot",
+             plotOutput("plot")
+    ),
+    tabPanel("About",
+             includeMarkdown("./docs/about.Rmd")         
+    )
+    
+  )
+  
+))
+
 )
 
 
