@@ -34,7 +34,7 @@ ui <- fluidPage(
         )
 #        tabPanel("Gráfico",
 #                 plotOutput("plot")
-        )
+#        )
         
       )
       
