@@ -32,8 +32,8 @@ ui <- fluidPage(
                  
                  htmlOutput("table")
         ),
-        tabPanel("Gráfico",
-                 plotOutput("plot")
+        tabPanel("About",
+                 includeMarkdown("./docs/about.Rmd") 
         )
         
       )
